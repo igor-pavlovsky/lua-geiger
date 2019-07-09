@@ -19,10 +19,8 @@ Architecture of the Lua code with this module is quite straightforward. The **in
 
 After a 12 second delay, **rout.lua** script is executed and the module will try to connect to the router to obtain local IP address. 
 
-Finally, after the IP address is obtained by the module, **rad.lua** script is executed and the module will start counting pulses. If we want to obtain environmental radiation levels in counts per minute (CPM), we should configure the timer to count for 60 seconds before sending the result via request to the server. The url in this last script sends a request to the server configured to run a python CGI script. 
+Finally, after the IP address is obtained by the module, **rad.lua** script is executed and the module starts counting the pulses. To obtain environmental radiation levels in counts per minute (CPM), we configured the timer to count for 60 seconds before sending the end result to the server. The url in this script is for a GET request sent to the server configured to run a python CGI script. 
 
 3. Example Python backend script to process/save the data
 
-The **rad_post.py** script is then executed to process the GET request from the module.  One working example of the script that saves the data locally may be the following.
-
-Finally, the result can be seen [here](http://texasmicrodevices.com/w/lua-for-iot-geiger-counter-with-nodemcu/) (at the bottom of the page). The Geiger counter sits on my window in a suburb of Austin, TX.
+The **rad_post.py** script is then executed to process the GET request from the module.  This is an example of the script that saves the data locally. Finally, end the result can be seen [here](http://texasmicrodevices.com/w/lua-for-iot-geiger-counter-with-nodemcu/) (at the bottom of the page). The Geiger counter sits on my window in a suburb of Austin, TX.

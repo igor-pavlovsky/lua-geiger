@@ -25,4 +25,4 @@ Finally, after the IP address is obtained by the module, **rad.lua** script is e
 
 The **rad_post.py** script is then executed to process the GET request from the module.  One working example of the script that saves the data locally may be the following.
 
-Finally, the result can be seen [here](http://igorpavlovsky.com/lua-for-iot-geiger-counter-with-nodemcu/) (at the bottom of the page). The Geiger counter sits on my window in a suburb of Austin, TX.
+Finally, the result can be seen [here](http://texasmicrodevices.com/w/lua-for-iot-geiger-counter-with-nodemcu/) (at the bottom of the page). The Geiger counter sits on my window in a suburb of Austin, TX.

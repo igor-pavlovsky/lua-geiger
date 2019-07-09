@@ -9,7 +9,7 @@ Before using the Lua code, the module was flashed with the Lua interpreter firmw
 
 The module can be powered either from a USB port during programming, or using an external power supply, +3.3V or +5V. In this project, the module was powered directly from a Geiger counter. A commercially available Bella counter was slightly modified to provide +5V power for the module and the conditioned pulse output. A diagram below shows the module pinout and connections.
 
-![Alt text](http://www.texasmicrodevices.com/w/wp-content/uploads/2019/05/nodemcu-geiger.gif)
+![Alt text](http://igorpavlovsky.com/wp-content/uploads/2019/05/nodemcu-geiger.gif)
 
 After the code is debugged and the module is functional, the module can be unplugged from the USB port and reconnected to the Geiger counter using external wiring connected directly to the module pins.
 
@@ -23,4 +23,4 @@ Finally, after the IP address is obtained by the module, **rad.lua** script is e
 
 3. Example Python backend script to process/save the data
 
-The **rad_post.py** script is then executed to process the GET request from the module.  This is an example of the script that saves the data locally. Finally, end the result can be seen [here](http://texasmicrodevices.com/w/lua-for-iot-geiger-counter-with-nodemcu/) (at the bottom of the page). The Geiger counter sits on my window in a suburb of Austin, TX.
+The **rad_post.py** script is then executed to process the GET request from the module.  This is an example of the script that saves the data locally. Finally, end the result can be seen [here](http://igorpavlovsky.com/lua-for-iot-geiger-counter-with-nodemcu/) (at the bottom of the page). The Geiger counter sits on my window in a suburb of Austin, TX.
